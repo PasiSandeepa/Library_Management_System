@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="620.0" prefWidth="879.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BooksFormController">
+   <children>
+      <AnchorPane layoutX="-6.0" prefHeight="630.0" prefWidth="918.0" style="-fx-background-color: #c8d6e5;" stylesheets="@../../../../../../../Viva%20set%20up/Library-Management/src/main/resources/css/style.css">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d40700" height="77.0" stroke="BLACK" strokeType="INSIDE" width="901.0" />
+            <Label layoutX="387.0" prefHeight="77.0" prefWidth="190.0" text="Books" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="43.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="297.0" fitWidth="373.0" layoutX="513.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../Viva%20set%20up/Library-Management/src/main/resources/img/2.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="24.0" layoutY="103.0" prefHeight="36.0" prefWidth="102.0" text="Bookid">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="243.0" prefHeight="36.0" prefWidth="102.0" text="Publisher">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="196.0" prefHeight="36.0" prefWidth="102.0" text="Author">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTotalBooks" layoutX="684.0" layoutY="340.0" prefHeight="31.0" prefWidth="167.0" text=" Total :  0">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font></Label>
+
+            <Label layoutX="24.0" layoutY="151.0" prefHeight="36.0" prefWidth="102.0" text="BookName">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="133.0" layoutY="307.0" onAction="#btnInsertOnAction" prefHeight="37.0" prefWidth="90.0" styleClass="btn" stylesheets="@../../../../../../../Viva%20set%20up/Library-Management/src/main/resources/css/style.css" text="Insert" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="237.0" layoutY="307.0" onAction="#btnUpdateOnAction" prefHeight="36.0" prefWidth="90.0" styleClass="btn" text="Update" textFill="#f4f4f4">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="342.0" layoutY="307.0" onAction="#btnDeleteOnAction" prefHeight="36.0" prefWidth="90.0" style="-fx-background-color: #eb2f06;" styleClass="btn" stylesheets="@../../../../../../../Viva%20set%20up/Library-Management/src/main/resources/css/style.css" text="Delete" textFill="#ececec">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <TextField fx:id="txtbookid" layoutX="158.0" layoutY="108.0" prefHeight="26.0" prefWidth="264.0" promptText="id" />
+            <TextField fx:id="txtauthor" layoutX="158.0" layoutY="199.0" prefHeight="26.0" prefWidth="264.0" promptText="Author" />
+            <TextField fx:id="txtbookname" layoutX="158.0" layoutY="156.0" prefHeight="26.0" prefWidth="264.0" promptText="Name" />
+            <TextField fx:id="txtpublisher" layoutX="158.0" layoutY="243.0" prefHeight="26.0" prefWidth="264.0" promptText="Publisher" />
+            <JFXButton fx:id="btnTotalBooks" layoutX="557.0" layoutY="340.0" onAction="#btnTotalBooksOnAction" prefHeight="26.0" prefWidth="112.0" style="-fx-background-color: #009432;" text="Total Books" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </JFXButton>
+
+
+            <JFXButton layoutX="35.0" layoutY="307.0" onAction="#btnSearchOnAction" prefHeight="37.0" prefWidth="90.0" styleClass="btn" stylesheets="@../../../../../../../Viva%20set%20up/Library-Management/src/main/resources/css/style.css" text="Search" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <TableView fx:id="tblBooks" layoutX="47.0" layoutY="384.0" prefHeight="183.0" prefWidth="828.0">
+               <columns>
+                  <TableColumn fx:id="colid" prefWidth="149.60002899169922" text="ID" />
+                  <TableColumn fx:id="colName" prefWidth="196.800048828125" text="Name" />
+                  <TableColumn fx:id="colAuthor" prefWidth="260.8000183105469" text="Author" />
+                  <TableColumn fx:id="colPublisher" prefWidth="223.20001220703125" text="Publisher" />
+               </columns>
+            </TableView>
+            <JFXButton layoutX="787.0" layoutY="574.0" onAction="#btnReloadOnAction" prefHeight="38.0" prefWidth="90.0" style="-fx-background-color: #6D214F;" text="Reload" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

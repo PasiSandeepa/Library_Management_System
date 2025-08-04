@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="620.0" prefWidth="900.0" style="-fx-background-color: #a5b1c2;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Borrowing.BorrowingFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ac1c09" height="90.0" layoutX="-1.0" stroke="BLACK" strokeType="INSIDE" width="900.0" />
+      <Label layoutX="366.0" layoutY="19.0" text="Borrowing" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="42.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="241.0" fitWidth="402.0" layoutX="515.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../Viva%20set%20up/Library-Management/src/main/resources/img/4.jpg" />
+         </image>
+      </ImageView>
+      <DatePicker fx:id="DateBorrowed" layoutX="265.0" layoutY="166.0" prefHeight="26.0" prefWidth="238.0" promptText="Date-borrowed" />
+      <DatePicker fx:id="DateReturn" layoutX="268.0" layoutY="242.0" prefHeight="26.0" prefWidth="238.0" promptText="Date-return" />
+      <TextField fx:id="txtid" layoutX="15.0" layoutY="99.0" prefHeight="26.0" prefWidth="238.0" promptText="ID" />
+      <TextField fx:id="txtStudentName" layoutX="269.0" layoutY="99.0" prefHeight="26.0" prefWidth="238.0" promptText="StudentName" />
+      <TextField fx:id="txtBook" layoutX="15.0" layoutY="166.0" prefHeight="26.0" prefWidth="238.0" promptText="BookID" />
+
+      <TableView fx:id="tblBorrowers" layoutX="17.0" layoutY="363.0" prefHeight="193.0" prefWidth="874.0" stylesheets="@../../../../../../../Viva%20set%20up/Library-Management/src/main/resources/css/style.css">
+
+         <columns>
+            <TableColumn fx:id="colid" prefWidth="55.19997787475586" text="ID" />
+            <TableColumn fx:id="colStudentName" prefWidth="152.79998779296875" text="StudentName" />
+            <TableColumn fx:id="colBookID" prefWidth="88.80006408691406" text="BookID" />
+            <TableColumn fx:id="colBorrowedDate" prefWidth="205.5999755859375" text="Date-borrowed" />
+            <TableColumn fx:id="colDescription" prefWidth="199.20001220703125" text="Description" />
+            <TableColumn fx:id="colReturnDate" prefWidth="199.20001220703125" text="Date-return" />
+         </columns>
+      </TableView>
+      <JFXButton layoutX="231.0" layoutY="319.0"
+                 onAction="#btnDeleteOnAction"
+                 prefHeight="38.0" prefWidth="87.0"
+                 style="-fx-background-color: #eb3b5a;"
+                 text="Delete">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+
+      <JFXButton layoutX="136.0" layoutY="318.0" onAction="#btnUpdateOnAction" prefHeight="38.0" prefWidth="87.0" style="-fx-background-color: #fed330;" text="Update">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="37.0" layoutY="318.0" onAction="#btnInsertOnAction" prefHeight="38.0" prefWidth="87.0" style="-fx-background-color: #fed330;" text="Insert">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnTotalBorrowing" layoutX="18.0" layoutY="572.0" onAction="#btnTotalBorrowingOnAction" prefHeight="38.0" prefWidth="156.0" style="-fx-background-color: #EA2027;" text="Count Borrowings" textFill="#ececec">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+
+      <TextField fx:id="txtTotal" editable="false" layoutX="196.0" layoutY="566.0" prefHeight="26.0" prefWidth="50.0" text="00">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></TextField>
+
+      <JFXButton layoutX="763.0" layoutY="565.0" onAction="#btnReloadOnAction" prefHeight="46.0" prefWidth="128.0" style="-fx-background-color: #1c0bff;" text="Reload" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="txtDescription" layoutX="13.0" layoutY="242.0" prefHeight="26.0" prefWidth="238.0" promptText="Description" />
+   </children>
+</AnchorPane>

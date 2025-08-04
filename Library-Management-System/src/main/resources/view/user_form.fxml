@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/23.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="user.UserFormController">
+
+<children>
+      <AnchorPane prefHeight="630.0" prefWidth="916.0" style="-fx-background-color: #a5b1c2;">
+         <children>
+            <TableView fx:id="tblUsers" layoutX="56.0" layoutY="337.0" prefHeight="228.0" prefWidth="802.0" stylesheets="@../../../../../../../Viva%20set%20up/Library-Management/src/main/resources/css/style.css">
+               <columns>
+                  <TableColumn fx:id="colid" prefWidth="101.59998321533203" text="Id" />
+                  <TableColumn fx:id="colName" prefWidth="191.20001220703125" text="Name" />
+                  <TableColumn fx:id="colEmail" prefWidth="237.59994506835938" text="Email" />
+                  <TableColumn fx:id="colAddress" prefWidth="275.20001220703125" text="Address" />
+               </columns>
+            </TableView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c12704" height="84.0" stroke="BLACK" strokeType="INSIDE" width="906.0" />
+            <Label layoutX="420.0" layoutY="16.0" prefHeight="58.0" prefWidth="176.0" text="User" textFill="#f7f7f7">
+               <font>
+                  <Font name="UD Digi Hookahs NK-B" size="50.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="W_RESIZE" />
+               </cursor>
+            </Label>
+            <JFXButton layoutX="113.0" layoutY="265.0" onAction="#btnSearchOnAction" prefHeight="36.0" prefWidth="80.0" style="-fx-background-color: #b71540;" text="Search" textFill="#fcf8f8">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="217.0" layoutY="265.0" onAction="#btnDeleteOnAction" prefHeight="36.0" prefWidth="80.0" style="-fx-background-color: #b71540;" stylesheets="@../../../../../../../Viva%20set%20up/Library-Management/src/main/resources/css/style.css" text="Delete" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="322.0" layoutY="265.0" onAction="#btnUpdateOnAction" prefHeight="36.0" prefWidth="80.0" style="-fx-background-color: #b71540;" stylesheets="@../../../../../../../Viva%20set%20up/Library-Management/src/main/resources/css/style.css" text="Update" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="424.0" layoutY="265.0" onAction="#btnAddOnAction" prefHeight="36.0" prefWidth="80.0" styleClass="btn" stylesheets="@../../../../../../../Viva%20set%20up/Library-Management/src/main/resources/css/style.css" text="Add">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <TextField fx:id="txtAddress" layoutX="308.0" layoutY="192.0" prefHeight="30.0" prefWidth="195.0" promptText="Address" />
+            <TextField fx:id="txtEmail" layoutX="59.0" layoutY="192.0" prefHeight="30.0" prefWidth="206.0" promptText="Email" />
+            <TextField fx:id="txtid" layoutX="58.0" layoutY="131.0" prefHeight="30.0" prefWidth="206.0" promptText="ID" />
+            <TextField fx:id="txtName" layoutX="307.0" layoutY="131.0" prefHeight="30.0" prefWidth="195.0" promptText="Name" />
+            <JFXButton layoutX="734.0" layoutY="570.0" onAction="#btnReloadOnAction" prefHeight="44.0" prefWidth="102.0" style="-fx-background-color: #0a3d62;" stylesheets="@../../../../../../../Viva%20set%20up/Library-Management/src/main/resources/css/style.css" text="Reload" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="204.0" fitWidth="217.0" layoutX="576.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../Viva%20set%20up/Library-Management/src/main/resources/img/3.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DashboardFormController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="680.0" prefWidth="1333.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6d214f" height="682.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="310.0" />
+            <ImageView fitHeight="703.0" fitWidth="1022.0" layoutX="315.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../Viva%20set%20up/Library-Management/src/main/resources/img/5.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="13.0" layoutY="3.0" prefHeight="72.0" prefWidth="283.0" text="Library Management System" textFill="#fcfafa">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="142.0" fitWidth="144.0" layoutX="86.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../Viva%20set%20up/Library-Management/src/main/resources/img/6.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="24.0" layoutY="230.0" onAction="#btnBookOnAction" prefHeight="46.0" prefWidth="266.0" style="-fx-background-color: #F8EFBA;" text="Books" textFill="#2b0202">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="25.0" layoutY="298.0" onAction="#btnBorrowingOnAction" prefHeight="46.0" prefWidth="266.0" style="-fx-background-color: #F8EFBA;" text="Borrowing" textFill="#2b0202">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="23.0" layoutY="374.0" onAction="#btnLibrarianOnAction" prefHeight="46.0" prefWidth="266.0" style="-fx-background-color: #ffffff;" text="Users" textFill="#2b0202">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="60.0" layoutY="532.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../Viva%20set%20up/Library-Management/src/main/resources/img/7.jpg" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="24.0" layoutY="445.0" onAction="#btnRegisterOnAction" prefHeight="46.0" prefWidth="266.0" style="-fx-background-color: #ffffff;" text="Register(Admin)" textFill="#2b0202">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="26.0" fitWidth="40.0" layoutX="56.0" layoutY="573.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../Viva%20set%20up/Library-Management/src/main/resources/img/8.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="105.0" layoutY="536.0" text="Library90@gmail.com" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="105.0" layoutY="571.0" prefHeight="26.0" prefWidth="118.0" text="+94778338438" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </Label>
+            <AnchorPane fx:id="loadFormContent" layoutX="384.0" layoutY="38.0" prefHeight="620.0" prefWidth="900.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

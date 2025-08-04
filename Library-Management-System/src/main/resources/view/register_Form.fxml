@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RegisterFormController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="620.0" prefWidth="900.0" style="-fx-background-color: #718093;">
+         <children>
+            <TextField fx:id="txtpassword" layoutX="528.0" layoutY="369.0" prefHeight="30.0" prefWidth="298.0" promptText="password" />
+            <TextField fx:id="txtusername" layoutX="527.0" layoutY="197.0" prefHeight="30.0" prefWidth="298.0" promptText="user name" />
+            <TextField fx:id="txtemail" layoutX="527.0" layoutY="255.0" prefHeight="30.0" prefWidth="298.0" promptText="email" />
+            <TextField fx:id="txtconfirmpassword" layoutX="528.0" layoutY="426.0" prefHeight="30.0" prefWidth="298.0" promptText="confirm password" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#192a56" height="620.0" layoutY="2.0" stroke="#401414" strokeType="INSIDE" width="419.0" />
+            <Label layoutX="73.0" layoutY="14.0" text="Register" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="60.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="422.0" fitWidth="399.0" layoutX="11.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../Viva%20set%20up/Library-Management/src/main/resources/img/11.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="88.0" fitWidth="88.0" layoutX="541.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../Viva%20set%20up/Library-Management/src/main/resources/img/11.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="88.0" fitWidth="96.0" layoutX="639.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../Viva%20set%20up/Library-Management/src/main/resources/img/12.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="628.0" layoutY="492.0" onAction="#btnRegisterOnAction" prefHeight="48.0" prefWidth="109.0" style="-fx-background-color: #b71540;" text="Register" textFill="#f7f4f4">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </JFXButton>
+            <TextField fx:id="txtaddress" layoutX="527.0" layoutY="314.0" prefHeight="30.0" prefWidth="298.0" promptText="address" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
